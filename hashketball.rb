@@ -167,6 +167,4 @@ def team_names
 end
 
 def player_numbers
-  numbers_array = []
-  count = 0
-  while 
+  all_player_stats 
