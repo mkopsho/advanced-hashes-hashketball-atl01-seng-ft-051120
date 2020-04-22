@@ -177,3 +177,6 @@ def player_numbers(team)
     end
   end
 end
+
+def player_stats(name)
+  player_stats.each do |k, v|
