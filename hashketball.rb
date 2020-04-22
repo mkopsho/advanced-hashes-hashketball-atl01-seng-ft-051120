@@ -132,7 +132,8 @@ def all_player_stats
 end
 
 def team_helper
-  game_hash
+  case team
+  
 
 def num_points_scored(name)
   count = 0
