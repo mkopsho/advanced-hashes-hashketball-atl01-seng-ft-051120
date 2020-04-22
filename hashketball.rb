@@ -189,4 +189,16 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  all_player_stats.detect do |shoe_size
+  largest_shoe = 0
+  rebounds = 0
+  player = ""
+  all_player_stats.each do |k, v|
+      team[:players].each do |name, stats|
+          if largest_shoe < shoe_size(name)
+              largest_shoe = shoe_size(name)
+              player = name
+          end
+      end
+  end
+  return player_stats(player)[:rebounds]
+end
