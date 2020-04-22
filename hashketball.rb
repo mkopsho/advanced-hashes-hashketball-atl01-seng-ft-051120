@@ -160,5 +160,5 @@ def team_colors(name)
 end
 
 def team_names
-  return game_hash[:home][:team_name] + game_hash[:home][:team_name]
+  return game_hash[:home][:team_name].split(game_hash[:home][:team_name])
 end
