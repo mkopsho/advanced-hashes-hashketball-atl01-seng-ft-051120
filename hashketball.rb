@@ -131,8 +131,7 @@ def all_player_stats
   game_hash[:home][:players] + game_hash[:away][:players] # Gives me an array of _all_ of the player stats.
 end
 
-def team_stats
-   # Gives me a hash of _all_ of the team stats.
+de # Gives me a hash of _all_ of the team stats.
 end
 
 def num_points_scored(name)
