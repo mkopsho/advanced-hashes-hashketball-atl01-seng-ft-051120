@@ -168,5 +168,6 @@ end
 
 def player_numbers
   all_player_stats.map do |player|
-    
+    player[:number]
+  end
 end
