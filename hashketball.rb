@@ -132,7 +132,7 @@ def all_player_stats
 end
 
 def team_stats
-  game_hash[:home].merge(game_hash[:away])
+  game_hash[:home].merge(game_hash[:away]) # Gives me a hash of _all_ of the 
 end
 
 def num_points_scored(name)
