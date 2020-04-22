@@ -150,3 +150,5 @@ def shoe_size(name)
     count += 1
   end
 end
+
+def team_colors(team_name)
