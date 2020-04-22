@@ -181,7 +181,7 @@ end
 def player_stats(name)
   count = 0
   while count < all_player_stats.count do
-    if all_player_stats[0].has_value?(name)
+    if all_player_stats[count].has_value?(name)
       return all_player_stats[count]
     end
     count += 1
