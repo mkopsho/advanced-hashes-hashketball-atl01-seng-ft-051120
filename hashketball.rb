@@ -165,3 +165,8 @@ def team_names
   name_array << game_hash[:home][:team_name]
   return name_array
 end
+
+def player_numbers
+  numbers_array = []
+  count = 0
+  while 
