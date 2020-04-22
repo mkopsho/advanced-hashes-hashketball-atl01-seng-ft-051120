@@ -166,8 +166,13 @@ def team_names
   return name_array
 end
 
-def player_numbers
-  all_player_stats.map do |player|
-    player[:number]
+def player_numbers(team)
+  if team == "Brooklyn Nets"
+    game_hash[:home].map do |player|
+      player[:number]
+    end
+  else
+    game_hash[:away].map do |player|
+      player[:number]
   end
 end
