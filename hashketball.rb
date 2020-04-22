@@ -131,10 +131,6 @@ def all_player_stats
   game_hash[:home][:players] + game_hash[:away][:players] # Gives me an array of all the player stats!
 end
 
-def team_helper
-  case team
-  
-
 def num_points_scored(name)
   count = 0
   while count < all_player_stats.count do
@@ -156,4 +152,5 @@ def shoe_size(name)
 end
 
 def team_colors(team_name)
+  game_hash[:home]
   
