@@ -152,5 +152,5 @@ def shoe_size(name)
 end
 
 def team_colors(team_name)
-  game_hash[:home]
+  if game_hash[:home]
   
