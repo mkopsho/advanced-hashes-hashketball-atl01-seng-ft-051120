@@ -179,9 +179,11 @@ def player_numbers(team)
 end
 
 def player_stats(name)
-  all_player_stats do |stats|
-    if stats.include?(name)
-      return stats
+  count = 0
+  while count < all_player_stats.count do
+    if all_player_stats.include?(name)
+      return all_player_stats[count]
     end
+    count += 1
   end
 end
