@@ -179,4 +179,7 @@ def player_numbers(team)
 end
 
 def player_stats(name)
-  player_stats.each do |k, v|
+  player_stats.each do |key, value|
+    if name == key
+  end
+end
