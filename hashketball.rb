@@ -141,8 +141,5 @@ def num_points_scored(name)
     count += 1
   end
 end
-#  game_hash.each_pair do |home, home_keys|
-#    home_keys.each_pair do |key, value|
-#      binding.pry
-#    end
-#  end
+
+def shoe_size(name)
