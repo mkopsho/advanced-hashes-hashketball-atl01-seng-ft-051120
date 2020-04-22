@@ -168,11 +168,11 @@ end
 
 def player_numbers(team)
   if team == "Brooklyn Nets"
-    game_hash[:home].map do |player|
+    game_hash[:home][:players].map do |player|
       player[:number]
     end
   else
-    game_hash[:away].map do |player|
+    game_hash[:away][:players].map do |player|
       player[:number]
   end
 end
