@@ -187,3 +187,6 @@ def player_stats(name)
     count += 1
   end
 end
+
+def big_shoe_rebounds
+  all_player_stats.detect do |shoe_size
