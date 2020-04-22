@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require "pry"
+
 def game_hash
   {
     home: {
@@ -126,4 +127,22 @@ def game_hash
   }
 end
 
-# Write code here
+def all_player_stats
+  game_hash[:home][:players] + game_hash[:away][:players] # Gives me an array of all the player stats!
+end
+
+def num_points_scored(name)
+  count = 0
+  while count < all_player_stats.count do
+    #binding.pry
+    if all_player_stats[count][:player_name] == name
+      return all_player_stats[count][:points]
+    end
+    count += 1
+  end
+end
+#  game_hash.each_pair do |home, home_keys|
+#    home_keys.each_pair do |key, value|
+#      binding.pry
+#    end
+#  end
