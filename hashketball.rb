@@ -128,11 +128,11 @@ def game_hash
 end
 
 def all_player_stats
-  game_hash[:home][:players] + game_hash[:away][:players] # Gives me an array of _all_ of the player stats!
+  game_hash[:home][:players] + game_hash[:away][:players] # Gives me an array of _all_ of the player stats.
 end
 
 def team_stats
-  game_hash[:home].merge(game_hash[:away]) # Gives me a hash of _all_ of the 
+  game_hash[:home].merge(game_hash[:away]) # Gives me a hash of _all_ of the team stats.
 end
 
 def num_points_scored(name)
@@ -156,7 +156,7 @@ def shoe_size(name)
 end
 
 def team_colors(name)
-  if game_hash[:home][:team_name] == name
+  if team_stats[:home][:team_name] == name
     return game_hash[:home][:colors]
   else
     return game_hash[:away][:colors]
