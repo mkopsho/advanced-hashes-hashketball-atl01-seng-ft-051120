@@ -167,6 +167,6 @@ def team_names
 end
 
 def player_numbers
-  all_player_stats[:players].map do |player|
+  all_player_stats.map do |player|
     
 end
