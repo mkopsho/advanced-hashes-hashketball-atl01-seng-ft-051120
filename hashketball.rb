@@ -180,7 +180,7 @@ end
 
 def player_stats(name)
   all_player_stats do |stats|
-    if name == stats[:player_name]
+    if stats.include?(name)
       return stats
     end
   end
