@@ -194,9 +194,9 @@ def big_shoe_rebounds
   player = ""
   all_player_stats.each do |stats|
     if largest_shoe < stats[:shoe]
-      largest_shoe = shoe(name)
-      player = name
+      largest_shoe = stats[:shoe]
+      player = stats[:player_name]
     end
   end
-  return player_stats(player)[:rebounds]
+  return all_player_stats(player)[:rebounds]
 end
