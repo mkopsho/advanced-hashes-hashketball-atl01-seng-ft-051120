@@ -167,5 +167,5 @@ def team_names
 end
 
 def player_numbers
-  all_player_stats 
+  all_player_stats[:player] 
 end
