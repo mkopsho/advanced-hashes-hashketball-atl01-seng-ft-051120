@@ -134,7 +134,6 @@ end
 def num_points_scored(name)
   count = 0
   while count < all_player_stats.count do
-    #binding.pry
     if all_player_stats[count][:player_name] == name
       return all_player_stats[count][:points]
     end
@@ -143,3 +142,11 @@ def num_points_scored(name)
 end
 
 def shoe_size(name)
+  count = 0
+  while count < all_player_stats.count do
+    if all_player_stats[count][:player_name] == name
+      return all_player_stats[count][:shoe]
+    end
+    count += 1
+  end
+end
